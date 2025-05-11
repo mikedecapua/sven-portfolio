@@ -1,0 +1,42 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<nav class="flex justify-center space-x-6 py-6 bg-white/10 backdrop-blur-md text-white border-b border-white/10 shadow-sm">
+  <a
+    href="/"
+    class={`border-b-2 transition-colors duration-200 ${
+      currentPath === '/' ? 'border-white' : 'border-transparent hover:border-white'
+    }`}
+  >
+    Home
+  </a>
+
+  <a
+    href="/about"
+    class={`border-b-2 transition-colors duration-200 ${
+      currentPath === '/about' ? 'border-white' : 'border-transparent hover:border-white'
+    }`}
+  >
+    About
+  </a>
+
+  <a
+    href="/samples"
+    class={`border-b-2 transition-colors duration-200 ${
+      currentPath === '/samples' ? 'border-white' : 'border-transparent hover:border-white'
+    }`}
+  >
+    Samples
+  </a>
+
+  <a
+  href="/resume"
+  class={`border-b-2 transition-colors duration-200 ${
+    currentPath === '/resume' ? 'border-white' : 'border-transparent hover:border-white'
+  }`}
+>
+  Resume
+</a>
+
+</nav>

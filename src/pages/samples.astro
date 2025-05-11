@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Writing Samples">
+  <section class="max-w-6xl mx-auto py-16 px-6 text-white bg-black">
+    <h1 class="text-4xl font-bold mb-10 border-b border-gray-700 pb-4">Writing Samples</h1>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Sample Tile 1 -->
+      <div class="bg-gray-800 rounded-lg p-6 shadow hover:shadow-lg transition">
+        <h2 class="text-xl font-semibold mb-2">API Reference: User Management</h2>
+        <p class="text-gray-400 mb-4">Structured reference for common endpoints like login, create user, and reset password.</p>
+        <a href="/samples/user-management" class="text-blue-400 hover:underline">View Sample</a>
+      </div>
+
+      <!-- Sample Tile 2 -->
+      <div class="bg-gray-800 rounded-lg p-6 shadow hover:shadow-lg transition">
+        <h2 class="text-xl font-semibold mb-2">Integration Guide: Payment SDK</h2>
+        <p class="text-gray-400 mb-4">A practical walkthrough for getting started with a payment SDK in under 15 minutes.</p>
+        <a href="/samples/payment-sdk" class="text-blue-400 hover:underline">View Sample</a>
+      </div>
+
+      <!-- Sample Tile 3 -->
+      <div class="bg-gray-800 rounded-lg p-6 shadow hover:shadow-lg transition">
+        <h2 class="text-xl font-semibold mb-2">OAuth Authentication Flow</h2>
+        <p class="text-gray-400 mb-4">A deep-dive tutorial on the OAuth 2.0 login sequence with real-world use cases.</p>
+        <a href="/samples/oauth-flow" class="text-blue-400 hover:underline">View Sample</a>
+      </div>
+    </div>
+  </section>
+</Layout>

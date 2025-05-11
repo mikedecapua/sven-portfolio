@@ -1,11 +1,35 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Home">
+  <section class="flex h-screen">
+    <!-- Text column -->
+    <div class="w-2/3 bg-black text-white flex items-center px-12">
+      <div>
+        <h1 class="text-4xl font-bold mb-4">Welcome to my portfolio site. </h1>
+        <p class="text-lg text-gray-300">
+          Here you will find an overview of who I am, including my background, writing samples, and career highlights. 
+          Whether you're a potential collaborator, recruiter, 
+          or just curious about my work, feel free to explore and reach out if you’d like to connect.
+        </p>  
+          <p class="mt-6 text-lg text-gray-300">
+          This site is also a living example of my evolving skills. 
+          I built it using Astro and continue to update it as I learn new tools and techniques, 
+          especially as I transition from user-focused documentation to developer-focused content. 
+          Thanks for stopping by.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Image column -->
+    <div class="w-1/3 h-full">
+      <img
+        src="/images/mike-hero.png"
+        alt="Mike DeCapua portrait"
+        class="w-full h-full object-cover object-center"
+      />
+    </div>
+  </section>  
 </Layout>
+
